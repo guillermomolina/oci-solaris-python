@@ -16,7 +16,7 @@ import subprocess
 import json
 import argparse
 
-from opencontainers.runtime.v1 import State as StateOCI
+from oci_spec.runtime.v1 import State as StateOCI
 
 class State:
     @staticmethod

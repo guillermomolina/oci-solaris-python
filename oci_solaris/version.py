@@ -12,19 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import subprocess
-import argparse
-import pathlib
-
-class List:
-    @staticmethod
-    def init_parser(volume_subparsers, parent_parser):
-        parser = volume_subparsers.add_parser('ls',
-            parents=[parent_parser],
-            aliases=['list'],
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter,
-            description='List volumes',
-            help='List volumes')
-    
-    def __init__(self, options):
-        pass
+__version__ = "0.1.3"
+AUTHOR = "Guillermo Adrián Molina"
+AUTHOR_EMAIL = "guillermoadrianmolina@gmail.com"
+NAME = "oci-solaris"
+PACKAGE_URL = "http://www.github.com/guillermomolina/oci-solaris-python"
+KEYWORDS = "open containers, oci, solaris"
+DESCRIPTION = "Python module for oci running on Solaris"
+LICENSE = "LICENSE"

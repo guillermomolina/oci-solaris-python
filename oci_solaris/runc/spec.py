@@ -16,9 +16,9 @@ import argparse
 import os.path
 import json
 
-from opencontainers.runtime.v1 import  Spec as Config, Platform, Process, \
+from oci_spec.runtime.v1 import  Spec as Config, Platform, Process, \
     Root, User, Solaris, SolarisAnet, Linux, Windows
-from solaris_oci.util import operating_system, architecture
+from oci_api.util import operating_system, architecture
 
 class Spec:
     @staticmethod

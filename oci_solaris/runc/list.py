@@ -17,7 +17,7 @@ import json
 import glob
 import argparse
 
-from solaris_oci.util.print import print_table
+from oci_api.util.print import print_table
 
 class List:
     @staticmethod

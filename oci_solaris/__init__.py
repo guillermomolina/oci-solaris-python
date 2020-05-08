@@ -12,7 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from solaris_oci.oci import OCIException
-
-class ContainerInUse(OCIException):
-    pass
+ 
+from oci_solaris.version import __version__

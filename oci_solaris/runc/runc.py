@@ -14,7 +14,7 @@
 
 import argparse
 import importlib
-from solaris_oci.version import __version__
+from oci_solaris.version import __version__
 from .create import Create
 from .delete import Delete
 from .kill import Kill

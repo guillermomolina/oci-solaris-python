@@ -20,7 +20,7 @@ import shutil
 import os
 import re
 import logging
-from solaris_oci.version import __version__
+from oci_solaris.version import __version__
 
 log_levels = {
     'debug': logging.DEBUG, 

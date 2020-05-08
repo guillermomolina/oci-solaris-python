@@ -24,7 +24,7 @@ def get_lookup():
     '''get version by way of the version file
     '''
     lookup = dict()
-    version_file = os.path.join('solaris_oci', 'version.py')
+    version_file = os.path.join('oci_solaris', 'version.py')
     with open(version_file) as filey:
         exec(filey.read(), lookup)
     return lookup
@@ -82,10 +82,9 @@ if __name__ == "__main__":
         install_requires=INSTALL_REQUIRES,
         entry_points={
             'console_scripts': [
-                'oci = solaris_oci.cli.cli:main'
-                'runc = solaris_oci.runc.runc:main',
-                'mkrepo = solaris_oci.mkrepo.mkrepo:main',
-                'mkrootfs = solaris_oci.mkrootfs.mkrootfs:main',
+                'runc = oci_solaris.runc.runc:main',
+                'mkrepo = oci_solaris.mkrepo.mkrepo:main',
+                'mkrootfs = oci_solaris.mkrootfs.mkrootfs:main'
             ]
         },
         classifiers=[
