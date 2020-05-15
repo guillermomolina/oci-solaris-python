@@ -1,5 +1,10 @@
 # Change log for Solaris OCI
 
+## 2020-05-14: Version 0.2.1
+
+- Changed requirements to add minimum version for oci packages
+
+
 ## 2020-05-14: Version 0.2.0
 
 - Renamed project to oci-solaris-python
