@@ -46,4 +46,5 @@ class Delete:
             file_path.unlink()
 #        if p.returncode != 1:
 #            print(p.stderr.decode('utf-8').rstrip('\r\n'))
-        exit(p.returncode)
+#        exit(p.returncode)
+

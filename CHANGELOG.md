@@ -1,5 +1,11 @@
 # Change log for Solaris OCI
 
+## 2020-05-25: Version 0.2.2
+
+- Add logging facility
+- Ignore delete returning error
+
+
 ## 2020-05-14: Version 0.2.1
 
 - Changed requirements to add minimum version for oci packages

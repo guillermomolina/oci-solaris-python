@@ -43,18 +43,5 @@ class List:
 
         if options.format == 'json':
             print(json.dumps(state_list))
-        else: # options.format == 'table'
-            print_table(state_list)
-
-    def test(self, options):
-        state_str = '''[
-            {"ociVersion": "1.0.0", "id": "mycontainer", "status": "stopped", "bundlepath": "/zones/mycontainer", "pid": -1},
-            {"ociVersion": "1.0.0", "id": "43548643654684654765484568468468545468465875348972349", "status": "stopped", "bundlepath": "/zones/mycontainer", "pid": -1},
-            {"ociVersion": "1.0.0", "id": "mycontainer2", "status": "stopped", "bundlepath": "/zones/mycont/fdgdf/dfde/fgrdgfd/ddfd/sdcss/dfdefe/dfsdfsainer", "pid": -1},
-            {"ociVersion": "1.0.0", "id": "mycontainer3", "status": "stopped", "bundlepath": "/zones/mycontainer", "pid": -1}
-        ]'''
-        state_list = json.loads(state_str)
-        if options.format == 'json':
-            print(json.dumps(state_list))
-        else: # options.format == 'table'
+        else:
             print_table(state_list)
